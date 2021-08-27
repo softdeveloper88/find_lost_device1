@@ -34,7 +34,7 @@ dependencies:
   http: ^0.13.3
   device_info: ^2.0.2
   firebase_database: ^7.1.1
-  geolocator: ^7.4.0
+  geolocator: ^5.3.1
   geocoder: ^0.2.1
   geocoding: ^2.0.0
 #  workmanager: ^0.2.0

@@ -2,8 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:ui';
 
-// import 'package:background_location/background_location.dart';
-import 'package:find_lost_device1/screens/dashboard.dart';
 import 'package:find_lost_device1/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -12,7 +10,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:shared_value/shared_value.dart';
 import 'package:vibration/vibration.dart';
 
 //initializeService
@@ -236,7 +233,6 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         0, msg['title'], msg['body'], platform);
   }
 
-
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     print("hellooooo");
@@ -252,9 +248,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     const platform1 = const MethodChannel('flutter.native/helper');
 
     try {
-     await platform1.invokeMethod("initializeService");
+      await platform1.invokeMethod("initializeService");
     } on PlatformException catch (e) {
-      print( "Failed to Invoke: '${e.message}'.");
+      print("Failed to Invoke: '${e.message}'.");
     }
   }
 
@@ -307,8 +303,10 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       home: SplashScreens(),
     );
   }
+
 // Crude counter to make messages unique
   int _messageCount = 0;
+
   /// The API endpoint here accepts a raw FCM payload for demonstration purposes.
   String constructFCMPayload(String token) {
     _messageCount++;
