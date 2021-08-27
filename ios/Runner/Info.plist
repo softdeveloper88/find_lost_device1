@@ -59,5 +59,17 @@
 		<string>A reason to get the permission</string>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>NSAppTransportSecurity</key>
+        <dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <true/>
+        </dict>
+        <key>UIBackgroundModes</key>
+        <array>
+            <string>audio</string>
+            <string>fetch</string>
+        </array>
+        <key>com.apple.security.network.client</key>
+        <true/>
 	</dict>
 </plist>
