@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:ui';
 
-import 'package:background_location/background_location.dart';
+// import 'package:background_location/background_location.dart';
 import 'package:find_lost_device1/screens/dashboard.dart';
 import 'package:find_lost_device1/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -44,49 +44,49 @@ Future<dynamic> _throwGetMessage(RemoteMessage message) async {
   print("PUSH RECEIVED");
   // getCurrentLocation();
 }
-
-void getCurrentLocation() {
-  BackgroundLocation.startLocationService();
-  BackgroundLocation().getCurrentLocation().then((location) async {
-    print('This is current Location ' + location.toMap().toString());
-    BackgroundLocation().getCurrentLocation().then((location) {
-      print('This is current Location ' + location.toMap().toString());
-    });
-    await BackgroundLocation.setAndroidNotification(
-      title: 'Background service is running',
-      message: 'Background location in progress',
-      icon: '@mipmap/ic_launcher',
-    );
-    await BackgroundLocation.setAndroidConfiguration(1000);
-    await BackgroundLocation.startLocationService(distanceFilter: 20);
-    BackgroundLocation.getLocationUpdates((location) {
-      var time =
-          DateTime.fromMillisecondsSinceEpoch(location.time.toInt()).toString();
-      print("Time:: $time");
-      print("Latitude:${location.latitude} Longitude: ${location.longitude}");
-
-      //   latitude = location.latitude.toString();
-      //   longitude = location.longitude.toString();
-      //   accuracy = location.accuracy.toString();
-      //   altitude = location.altitude.toString();
-      //   bearing = location.bearing.toString();
-      //   speed = location.speed.toString();
-      //   time = DateTime.fromMillisecondsSinceEpoch(
-      //       location.time!.toInt())
-      //       .toString();
-      // });
-      // print('''\n
-      //                   Latitude:  $latitude
-      //                   Longitude: $longitude
-      //                   Altitude: $altitude
-      //                   Accuracy: $accuracy
-      //                   Bearing:  $bearing
-      //                   Speed: $speed
-      //                   Time: $time
-      //                 ''');
-    });
-  });
-}
+//
+// void getCurrentLocation() {
+//   BackgroundLocation.startLocationService();
+//   BackgroundLocation().getCurrentLocation().then((location) async {
+//     print('This is current Location ' + location.toMap().toString());
+//     BackgroundLocation().getCurrentLocation().then((location) {
+//       print('This is current Location ' + location.toMap().toString());
+//     });
+//     await BackgroundLocation.setAndroidNotification(
+//       title: 'Background service is running',
+//       message: 'Background location in progress',
+//       icon: '@mipmap/ic_launcher',
+//     );
+//     await BackgroundLocation.setAndroidConfiguration(1000);
+//     await BackgroundLocation.startLocationService(distanceFilter: 20);
+//     BackgroundLocation.getLocationUpdates((location) {
+//       var time =
+//           DateTime.fromMillisecondsSinceEpoch(location.time.toInt()).toString();
+//       print("Time:: $time");
+//       print("Latitude:${location.latitude} Longitude: ${location.longitude}");
+//
+//       //   latitude = location.latitude.toString();
+//       //   longitude = location.longitude.toString();
+//       //   accuracy = location.accuracy.toString();
+//       //   altitude = location.altitude.toString();
+//       //   bearing = location.bearing.toString();
+//       //   speed = location.speed.toString();
+//       //   time = DateTime.fromMillisecondsSinceEpoch(
+//       //       location.time!.toInt())
+//       //       .toString();
+//       // });
+//       // print('''\n
+//       //                   Latitude:  $latitude
+//       //                   Longitude: $longitude
+//       //                   Altitude: $altitude
+//       //                   Accuracy: $accuracy
+//       //                   Bearing:  $bearing
+//       //                   Speed: $speed
+//       //                   Time: $time
+//       //                 ''');
+//     });
+//   });
+// }
 
 /// Create a [AndroidNotificationChannel] for heads up notifications
 AndroidNotificationChannel channel;

@@ -38,8 +38,8 @@ dependencies:
   geocoder: ^0.2.1
   geocoding: ^2.0.0
 #  workmanager: ^0.2.0
-#  background_location: ^0.6.1
-#  flutter_background_location: ^0.0.4
+  background_location: ^0.6.1
+  flutter_background_location: ^0.0.4
 #  flutter_isolate: ^2.0.0
   flutter_ringtone_player: ^3.0.0
   vibration: ^1.7.3
