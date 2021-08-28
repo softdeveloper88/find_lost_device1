@@ -45,7 +45,7 @@ dependencies:
   vibration: ^1.7.3
   maps_launcher: ^2.0.1
   sensors: ^2.0.3
-  assets_audio_player: ^3.0.3+6
+#  assets_audio_player: ^3.0.3+6
   battery_info: ^1.0.7
   fluttertoast: ^8.0.8
   in_app_review: ^2.0.2
