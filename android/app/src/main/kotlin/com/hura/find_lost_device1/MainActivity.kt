@@ -16,7 +16,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.annotation.NonNull
 import androidx.core.app.ActivityCompat
-import com.hura.find_lost_device1.R
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
 import com.google.android.gms.tasks.OnFailureListener
@@ -89,6 +88,16 @@ class MainActivity : FlutterActivity() {
                         editor.apply()
 
                         val isDeleted: Boolean = deleteAllData()
+                    }
+                    "sensorDetectionActive" -> {
+                        Toast.makeText(this@MainActivity, "Start sensor", Toast.LENGTH_SHORT).show()
+                        val i = Intent(this, SensorService::class.java)
+                        startService(i)
+                    }
+                    "sensorDetectionDeactive" -> {
+                        Toast.makeText(this@MainActivity, "Stop sensor", Toast.LENGTH_SHORT).show()
+                        val i = Intent(this, SensorService::class.java)
+                        stopService(i)
                     }
 
                 }
@@ -271,7 +280,6 @@ class MainActivity : FlutterActivity() {
         }
 
     }
-
 
 
     fun checkRunTimePermission() {

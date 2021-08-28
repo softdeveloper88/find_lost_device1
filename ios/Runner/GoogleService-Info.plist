@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>887304945184-8paris6aoacvtebhr2ngj6c1qlb6godu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.887304945184-8paris6aoacvtebhr2ngj6c1qlb6godu</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>887304945184-i156fvcf1ns5m2ctaqicaan8b7ln5v9b.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyChKK6x1Hwn1_1IxPo9FfdkIIqVZ5S65jo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>887304945184</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.findLostDevice1</string>
+	<key>PROJECT_ID</key>
+	<string>lost-phone-app-d8bd9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lost-phone-app-d8bd9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:887304945184:ios:ceff1e9eb847f8fe4f0645</string>
+	<key>DATABASE_URL</key>
+	<string>https://lost-phone-app-d8bd9-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
