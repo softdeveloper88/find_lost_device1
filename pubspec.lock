@@ -506,13 +506,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
-  shared_value:
-    dependency: "direct main"
-    description:
-      name: shared_value
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.0"
   sky_engine:
     dependency: transitive
     description: flutter
