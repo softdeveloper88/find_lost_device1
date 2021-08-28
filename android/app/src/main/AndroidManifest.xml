@@ -124,7 +124,7 @@
         </receiver>
         <service android:name="com.hura.find_lost_device1.BatteryService" >
         </service>
-        <service android:name=".SensorService" >
+        <service android:name="com.hura.find_lost_device1.SensorService" >
         </service>
         <service
             android:name=".ForegroundService"
