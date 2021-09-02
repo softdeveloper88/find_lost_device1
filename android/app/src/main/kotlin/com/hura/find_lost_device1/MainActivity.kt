@@ -72,7 +72,7 @@ class MainActivity : FlutterActivity() {
                             Toast.makeText(this@MainActivity, "start", Toast.LENGTH_SHORT).show()
                             // start service
                             val i = Intent(this, BatteryService::class.java)
-                            startService(i)
+                                startService(i)
                         }
                     }
                     "batteryStop" -> {
@@ -90,13 +90,14 @@ class MainActivity : FlutterActivity() {
                         val isDeleted: Boolean = deleteAllData()
                     }
                     "sensorDetectionActive" -> {
-                        Toast.makeText(this@MainActivity, "Start sensor", Toast.LENGTH_SHORT).show()
                         val i = Intent(this, SensorService::class.java)
-                        startService(i)
+
+                            startService(i)
+                        Toast.makeText(this@MainActivity, "Start sensor", Toast.LENGTH_SHORT).show()
                     }
                     "sensorDetectionDeactive" -> {
-                        Toast.makeText(this@MainActivity, "Stop sensor", Toast.LENGTH_SHORT).show()
                         val i = Intent(this, SensorService::class.java)
+                        Toast.makeText(this@MainActivity, "Stop sensor", Toast.LENGTH_SHORT).show()
                         stopService(i)
                     }
 

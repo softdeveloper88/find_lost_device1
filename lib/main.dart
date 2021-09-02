@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:ui';
-
 import 'package:find_lost_device1/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -135,8 +133,7 @@ Future<void> main() async {
       alert: true,
       badge: true,
       sound: true,
-    )
-        .then((value) {
+    ).then((value) {
       print("value:print");
     });
   }

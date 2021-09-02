@@ -65,7 +65,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
-    implementation 'com.google.firebase:firebase-messaging-directboot:'
+    // 'com.google.firebase:firebase-messaging-directboot:'
     implementation 'androidx.work:work-runtime-ktx:2.5.0'
     implementation 'androidx.test:core-ktx:1.4.0'
     implementation 'com.google.firebase:firebase-database-ktx:20.0.1'
